@@ -1,0 +1,514 @@
+/** Шапка сайта */
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.headerList {
+  display: flex;
+  gap: 60px;
+  font-weight: 500;
+  transition: 250ms;
+}
+
+.headerList li {
+  transition: 250ms;
+}
+
+.headerList a {
+  transition: 250ms;
+}
+
+.headerList a:hover {
+  color: #598d66;
+}
+
+.headerList li:hover {
+  transform: scale(1.1);
+  color: #598d66;
+}
+
+.headerBurger {
+  z-index: 2;
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #d4e8d9;
+}
+
+.headerBurger span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  left: 5px;
+  background-color: black;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+
+.headerBurger span:first-child {
+  transform: translateY(-10px);
+}
+
+.headerBurger span:last-child {
+  transform: translateY(10px);
+}
+
+.header.open .headerBurger span:first-child {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header.open .headerBurger span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .headerBurger span:last-child {
+  transform: translateY(0) rotate(-45deg);
+}
+
+/** Приветственная секция */
+
+.welcomeWrapper {
+  display: flex;
+}
+
+.welcomeText {
+  margin-top: 70px;
+  width: 540px;
+  height: 331px;
+}
+
+.welcomeTitle {
+  font-weight: 500;
+  font-size: 55px;
+}
+
+.welcomeTitle span {
+  color: #598d66;
+}
+
+.welcomeSubtitle {
+  font-size: 16px;
+  line-height: 23px;
+  color: #86928b;
+}
+
+.productBtn {
+  border-radius: 6px;
+  margin-top: 50px;
+  width: 200px;
+  height: 55px;
+  border: 1px solid #598d66;
+  font-size: 17px;
+  color: #598d66;
+  transition: 250ms;
+}
+
+.productBtn:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 40px 1px #598d66;
+  background-color: #376b44;
+  color: #fff;
+}
+
+/** Каталог */
+
+.reproductionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reproductionTitle {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.catalogSwitcher.active {
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 43px;
+  background-color: #376b44;
+  color: white;
+}
+
+.catalogSwitcher {
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  width: 126px;
+  height: 43px;
+  background-color: #d4e8d9;
+}
+
+.catalogSwicherBtn {
+  display: flex;
+  gap: 30px;
+}
+
+.catalog {
+  display: none;
+}
+
+.catalog.active {
+  display: block;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.painting {
+  margin-top: 30px;
+  width: 310px;
+  height: 700px;
+  background-color: #e1ede6;
+}
+
+.painting img {
+  transform: scale(0.9);
+}
+
+.author {
+  color: #86928b;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.paintingTitle {
+  font-weight: 500;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.paintingDesc {
+  font-weight: 500;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.paintingPrice {
+  font-weight: 500;
+  font-size: 24px;
+  color: #598d66;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.paintingBtn {
+  border: 1px solid #598d66;
+  background-color: #e1ede6;
+  color: #598d66;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 30px 100px;
+  margin-top: 20px;
+  transition: 250ms;
+}
+
+.paintingBtn:hover {
+  background-color: #376b44;
+  color: #fff;
+  cursor: pointer;
+}
+
+.paintingContent {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/** Информация о сайте */
+
+.websiteInfo {
+  background-image: url(./images/websiteInfoBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 70px;
+  margin-top: 60px;
+}
+
+.websiteInfoBlock {
+  color: #fff;
+  width: 600px;
+}
+
+.websiteWrapper {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.websiteInfoSubtitle {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.websiteInfoBtn {
+  color: rgb(18, 18, 139);
+  background-color: #eedb6d;
+  border: 2px solid rgb(18, 18, 139);
+  width: 257px;
+  height: 65px;
+  font-size: 18px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  transition: 250ms;
+}
+
+.websiteInfoBtn:hover {
+  background-color: rgb(18, 18, 139);
+  color: yellow;
+  border: 2px solid yellow;
+  cursor: pointer;
+}
+
+/** Команда  */
+
+.teamMain {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.teamTitle {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.teamSubtitle {
+  width: 600px;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.teamImages {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.teamImg {
+  width: 400px;
+}
+
+/** Футер  */
+
+.footer {
+  background-color: #e1ede6;
+  width: 100%;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  height: 168px;
+}
+
+.footerNav {
+  margin-top: 10px;
+  display: flex;
+  gap: 40px;
+  font-weight: 500;
+}
+
+.footerLogoPart {
+  margin-top: 23px;
+}
+
+.footerNumber {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+
+.numberSumtitle {
+  font-size: 18px;
+  color: #86928b;
+  margin-top: 8px;
+}
+
+.footerTitle {
+  font-size: 20px;
+}
+
+.footerList a {
+  color: #86928b;
+  font-size: 18px;
+}
+
+.footerList li {
+  margin-top: 6px;
+}
+
+.footerSM {
+  margin-top: 23px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 30px;
+}
+
+.brandTitle {
+  font-size: 13px;
+  color: #86928b;
+}
+
+.rights {
+  font-size: 13px;
+  color: #86928b;
+}
+
+/** Адаптивка  */
+
+@media (max-width: 400px) {
+  /** Шапка сайта  */
+
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .header.open .headerNav {
+    transform: translateX(100%);
+  }
+
+  .headerBurger {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .headerNav {
+    position: absolute;
+    left: -480px;
+    top: 0;
+    width: 400px;
+    background-color: #d4e8d9;
+    padding: 70px 20px 20px 20px;
+    transition: transform 0.5s;
+  }
+
+  .headerList {
+    display: block;
+  }
+
+  .headerList a {
+    display: block;
+    font-size: 24px;
+    padding: 50px 0;
+  }
+
+  .headerList img {
+    display: none;
+  }
+
+  /** Приветственная секция  */
+  .welcomeTitle {
+    font-size: 40px;
+  }
+
+  .welcomeImg {
+    display: none;
+  }
+
+  .welcomeText {
+    width: 250px;
+  }
+
+  /** Репродукции  */
+
+  .reproductionPage {
+    margin-top: 120px;
+  }
+
+  .reproductionTitle {
+    font-size: 30px;
+  }
+
+  .reproductionHeader {
+    display: block;
+  }
+
+  .catalogSwitcher.active {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  .catalogSwitcher {
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  .catalog.active {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+
+  /** Информация о сайте  */
+
+  .websiteInfoBlock {
+    width: 350px;
+  }
+
+  .websiteInfoTitle {
+    font-size: 25px;
+  }
+
+  /** Информация о команде */
+
+  .teamMain {
+    display: block;
+  }
+
+  .teamImg {
+    width: 290px;
+  }
+
+  .teamTitle {
+    font-size: 40px;
+  }
+
+  .teamSubtitle {
+    width: 300px;
+  }
+
+  /** Футер  */
+
+  .footer {
+    height: 470px;
+    padding-top: 10px;
+  }
+
+  .footerWrapper {
+    display: block;
+  }
+
+  .footerNav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .footerSM {
+    margin-left: 70px;
+  }
+}

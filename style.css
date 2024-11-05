@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import "./main.css";
+
+/** Общие стили */
+
+body {
+  background-color: #f4f6f5;
+  font-family: "Raleway", system-ui;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e1ede6;
+  height: 100px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
